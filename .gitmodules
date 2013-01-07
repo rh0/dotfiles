@@ -7,3 +7,6 @@
 [submodule "vim/bundle/zenburn"]
 	path = vim/bundle/zenburn
 	url = git://github.com/jnurmine/Zenburn.git
+[submodule "vim/bundle/pathogen"]
+	path = vim/bundle/pathogen
+	url = git://github.com/tpope/vim-pathogen.git
