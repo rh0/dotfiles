@@ -1,0 +1,111 @@
+systemctl [OPTIONS...] {COMMAND} ...
+
+Query or send control commands to the systemd manager.
+
+  -h --help           Show this help
+     --version        Show package version
+  -t --type=TYPE      List only units of a particular type
+  -p --property=NAME  Show only properties by this name
+  -a --all            Show all units/properties, including dead/empty ones
+     --failed         Show only failed units
+     --full           Don't ellipsize unit names on output
+     --fail           When queueing a new job, fail if conflicting jobs are
+                      pending
+     --ignore-dependencies
+                      When queueing a new job, ignore all its dependencies
+     --kill-who=WHO   Who to send signal to
+  -s --signal=SIGNAL  Which signal to send
+  -H --host=[USER@]HOST
+                      Show information for remote host
+  -P --privileged     Acquire privileges before execution
+  -q --quiet          Suppress output
+     --no-block       Do not wait until operation finished
+     --no-wall        Don't send wall message before halt/power-off/reboot
+     --no-reload      When enabling/disabling unit files, don't reload daemon
+                      configuration
+     --no-legend      Do not print a legend (column headers and hints)
+     --no-pager       Do not pipe output into a pager
+     --no-ask-password
+                      Do not ask for system passwords
+     --order          When generating graph for dot, show only order
+     --require        When generating graph for dot, show only requirement
+     --system         Connect to system manager
+     --user           Connect to user service manager
+     --global         Enable/disable unit files globally
+  -f --force          When enabling unit files, override existing symlinks
+                      When shutting down, execute action immediately
+     --root=PATH      Enable unit files in the specified root directory
+     --runtime        Enable unit files only temporarily until next reboot
+  -n --lines=INTEGER  Journal entries to show
+  -o --output=STRING  Change journal output mode (short, short-monotonic,
+                      verbose, export, json, json-pretty, json-sse, cat)
+
+Unit Commands:
+  list-units                      List loaded units
+  start [NAME...]                 Start (activate) one or more units
+  stop [NAME...]                  Stop (deactivate) one or more units
+  reload [NAME...]                Reload one or more units
+  restart [NAME...]               Start or restart one or more units
+  try-restart [NAME...]           Restart one or more units if active
+  reload-or-restart [NAME...]     Reload one or more units is possible,
+                                  otherwise start or restart
+  reload-or-try-restart [NAME...] Reload one or more units is possible,
+                                  otherwise restart if active
+  isolate [NAME]                  Start one unit and stop all others
+  kill [NAME...]                  Send signal to processes of a unit
+  is-active [NAME...]             Check whether units are active
+  status [NAME...|PID...]         Show runtime status of one or more units
+  show [NAME...|JOB...]           Show properties of one or more
+                                  units/jobs or the manager
+  help [NAME...|PID...]            Show manual for one or more units
+  reset-failed [NAME...]          Reset failed state for all, one, or more
+                                  units
+  load [NAME...]                  Load one or more units
+
+Unit File Commands:
+  list-unit-files                 List installed unit files
+  enable [NAME...]                Enable one or more unit files
+  disable [NAME...]               Disable one or more unit files
+  reenable [NAME...]              Reenable one or more unit files
+  preset [NAME...]                Enable/disable one or more unit files
+                                  based on preset configuration
+  mask [NAME...]                  Mask one or more units
+  unmask [NAME...]                Unmask one or more units
+  link [PATH...]                  Link one or more units files into
+                                  the search path
+  is-enabled [NAME...]            Check whether unit files are enabled
+
+Job Commands:
+  list-jobs                       List jobs
+  cancel [JOB...]                 Cancel all, one, or more jobs
+
+Status Commands:
+  dump                            Dump server status
+  dot                             Dump dependency graph for dot(1)
+
+Snapshot Commands:
+  snapshot [NAME]                 Create a snapshot
+  delete [NAME...]                Remove one or more snapshots
+
+Environment Commands:
+  show-environment                Dump environment
+  set-environment [NAME=VALUE...] Set one or more environment variables
+  unset-environment [NAME...]     Unset one or more environment variables
+
+Manager Lifecycle Commands:
+  daemon-reload                   Reload systemd manager configuration
+  daemon-reexec                   Reexecute systemd manager
+
+System Commands:
+  default                         Enter system default mode
+  rescue                          Enter system rescue mode
+  emergency                       Enter system emergency mode
+  halt                            Shut down and halt the system
+  poweroff                        Shut down and power-off the system
+  reboot                          Shut down and reboot the system
+  kexec                           Shut down and reboot the system with kexec
+  exit                            Request user instance exit
+  switch-root [ROOT] [INIT]       Change to a different root file system
+  suspend                         Suspend the system
+  hibernate                       Hibernate the system
+  hybrid-sleep                    Hibernate and suspend the system
