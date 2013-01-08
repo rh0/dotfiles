@@ -73,3 +73,63 @@
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
+[submodule "vim/bundle/countjump"]
+	path = vim/bundle/countjump
+	url = https://github.com/vim-scripts/CountJump
+[submodule "vim/bundle/git"]
+	path = vim/bundle/git
+	url = https://github.com/tpope/vim-git
+[submodule "vim/bundle/mw-utils"]
+	path = vim/bundle/mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+[submodule "vim/bundle/php"]
+	path = vim/bundle/php
+	url = https://github.com/vim-scripts/php.vim--Garvin
+[submodule "vim/bundle/pythoncomplete"]
+	path = vim/bundle/pythoncomplete
+	url = https://github.com/vim-scripts/pythoncomplete
+[submodule "ri-browser"]
+	path = ri-browser
+	url = https://github.com/vim-scripts/ri-browser
+[submodule "vim/bundle/ri-browser"]
+	path = vim/bundle/ri-browser
+	url = https://github.com/vim-scripts/ri-browser
+[submodule "ruby"]
+	path = ruby
+	url = https://github.com/vim-ruby/vim-ruby
+[submodule "vim/bundle/ruby"]
+	path = vim/bundle/ruby
+	url = https://github.com/vim-ruby/vim-ruby
+[submodule "vim/bundle/showtrailingwhitespace"]
+	path = vim/bundle/showtrailingwhitespace
+	url = https://github.com/vim-scripts/ShowTrailingWhitespace
+[submodule "surround"]
+	path = surround
+	url = https://github.com/tpope/vim-surround
+[submodule "vim/bundle/surround"]
+	path = vim/bundle/surround
+	url = https://github.com/tpope/vim-surround
+[submodule "tlib"]
+	path = tlib
+	url = https://github.com/tomtom/tlib_vim
+[submodule "vim/bundle/tlib"]
+	path = vim/bundle/tlib
+	url = https://github.com/tomtom/tlib_vim
+[submodule "unimpaired"]
+	path = unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "vim/bundle/unimpaired"]
+	path = vim/bundle/unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "vim/bundle/cofeescript"]
+	path = vim/bundle/cofeescript
+	url = https://github.com/kchmck/vim-coffee-script
+[submodule "webapi"]
+	path = webapi
+	url = https://github.com/mattn/webapi-vim
+[submodule "vim/bundle/webapi"]
+	path = vim/bundle/webapi
+	url = https://github.com/mattn/webapi-vim
