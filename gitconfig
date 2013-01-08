@@ -1,0 +1,17 @@
+[color]
+  ui = auto
+[user]
+	email = ryan@theoleschool.com
+	name = rho
+[core]
+  excludesfile = ~/.gitignore
+[url "http://git.drupal.org/project/"]
+  insteadOf = drupal://
+[url "http://git.drupal.org/sandbox/"]
+  insteadOf = dupalsand://
+[url "git@github.com:rh0/"]
+  insteadOf = rho://
+[url "git@github.com:ENTERMEDIA/"]
+  insteadOf = emed://
+[github]
+  user = rh0
