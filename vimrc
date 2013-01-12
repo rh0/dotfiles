@@ -6,7 +6,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 " Zenburn Colors (alien fruit salad)
-colorscheme zenburn
+colors zenburn
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
