@@ -8,4 +8,4 @@ Everything in the root of this repository should be sym linked to your home dire
 
 ### Notes:
 
-I enjoy having transparent background in my terminal, as well as vim.  This is set in the Xdefaults file for rxvt, but in order for vim to respect this using the zenburn color scheme.  You will have to edit the zenburn.vim file and change the line `hi Normal ctermfg=188 ctermbg=237` to `hi Normal ctermfg=188 ctermbg=500` I would change this in the repo, but I would like to keep the submodule updating from the zenburn git source so elected not to.
+I enjoy having a transparent background in my terminal, as well as vim.  This is set in the Xdefaults file for rxvt, but in order for vim to respect this using the zenburn color scheme.  You will have to edit the zenburn.vim file and change the line `hi Normal ctermfg=188 ctermbg=237` to `hi Normal ctermfg=188 ctermbg=500` I would change this in the repo, but I want to keep the submodule updating from the zenburn git source.
