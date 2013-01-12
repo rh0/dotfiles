@@ -1,6 +1,9 @@
 !Perl Extensions (csv)
 URxvt.perl-ext-common: clipboard
 
+!kill the scrollbar
+URxvt.scrollBar: false
+
 !clipboard settings
 URxvt.keysym.M-c	: perl:clipboard:copy
 URxvt.keysym.M-V	: perl:clipboard:paste
