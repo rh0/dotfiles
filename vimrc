@@ -5,6 +5,13 @@ set nocompatible
 call pathogen#infect()
 call pathogen#helptags()
 
+" make sure we get utf-8
+set encoding=utf-8
+set fileencoding=utf-8
+
+" NERDTree
+let g:NERDTreeDirArrows=0
+
 " Zenburn Colors (alien fruit salad)
 colors zenburn
 
