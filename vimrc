@@ -119,7 +119,10 @@ set statusline+=%=%P " percentage of file
 
 " NERDTree Options
 map <f3> :NERDTreeToggle<cr>
+let NERDChristmasTree = 1
+let NERDTreeShowHidden = 1
 let NERDTreeHijackNetrw = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeChiDirMode = 2
+let NERDTreeAutoDeleteBuffer = 1
