@@ -9,7 +9,7 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # add Ruby to path
-PATH="${PATH}:~/.gem/ruby/1.9.1/bin"
+PATH="${PATH}:/home/rho/.gem/ruby/1.9.1/bin"
 
 # set UTF-8
 export LANG=en_US.UTF-8
