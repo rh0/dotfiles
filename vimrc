@@ -5,6 +5,12 @@ set nocompatible
 call pathogen#infect()
 call pathogen#helptags()
 
+" window focus
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 " make sure we get utf-8
 set encoding=utf-8
 set fileencoding=utf-8
@@ -19,6 +25,7 @@ colors zenburn
 set backspace=indent,eol,start
 
 " some regular options
+set cursorline " highlight cursor line
 set number " show line numbers
 set laststatus=2 " show statusline
 set wrap " visually wrap lines
@@ -109,3 +116,10 @@ set statusline+=%*
 set statusline+=%=%f\ " file name"
 set statusline+=%=%10((%l,%c)%)\ " line and column
 set statusline+=%=%P " percentage of file
+
+" NERDTree Options
+map <f3> :NERDTreeToggle<cr>
+let NERDTreeHijackNetrw = 1
+let NERDTreeQuitOnOpen = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeChiDirMode = 2
