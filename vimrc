@@ -15,16 +15,20 @@ map <C-l> <C-w>l
 set encoding=utf-8
 set fileencoding=utf-8
 
-" NERDTree
-let g:NERDTreeDirArrows=0
-
 " Zenburn Colors (alien fruit salad)
 colors zenburn
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" GUI options
+set guioptions-=T " kill the toolbar if using in the GUI
+set guioptions-=m " remove menu
+set guioptions-=r " remove the right scrollbar
+set guioptions-=L " remove left scrollbar when split
+
 " some regular options
+set scrolloff=5 " begin scrolling 5 lines from the bottom
 set cursorline " highlight cursor line
 set number " show line numbers
 set laststatus=2 " show statusline
@@ -125,4 +129,5 @@ let NERDTreeHijackNetrw = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeChiDirMode = 2
+let NERDTreeDirArrows=1
 let NERDTreeAutoDeleteBuffer = 1
