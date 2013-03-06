@@ -17,6 +17,7 @@ fi
 PATH="${PATH}:/home/rho/.gem/ruby/1.9.1/bin"
 
 # set UTF-8
+export TERM=xterm
 export LANG=en_US.UTF-8
 export LC_MESSAGES="C"
 
