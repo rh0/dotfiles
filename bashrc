@@ -33,3 +33,6 @@ alias sudo="sudo -E"
 # alias terminal vim to gvim
 alias vim="gvim"
 alias vi="gvim"
+
+# alias for todo.sh to t
+alias t="todo.sh"
