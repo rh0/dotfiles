@@ -135,5 +135,8 @@ let NERDTreeDirArrows=1
 let NERDTreeAutoDeleteBuffer = 1
 
 " Taglist Options
-set Tlist_Inc_Winwidth = 0
+let Tlist_Inc_Winwidth = 0
+let Tlist_Show_One_file = 1
+let Tlist_Sort_Type = "order"
+let Tlist_Use_Right_Window = 1
 map <f4> : TlistToggle <CR>
