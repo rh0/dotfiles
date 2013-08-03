@@ -133,3 +133,7 @@ let NERDTreeMinimalUI = 1
 let NERDTreeChiDirMode = 2
 let NERDTreeDirArrows=1
 let NERDTreeAutoDeleteBuffer = 1
+
+" Taglist Options
+set Tlist_Inc_Winwidth = 0
+map <f4> : TlistToggle <CR>
