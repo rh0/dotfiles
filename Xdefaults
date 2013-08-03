@@ -1,8 +1,27 @@
 !Perl Extensions (csv)
 URxvt.perl-ext-common: clipboard
 
-!kill the scrollbar
-URxvt.scrollBar: false
+Xcursor*theme:         Vanilla-DMZ-AA
+
+Xft.dpi:               100
+Xft.antialias:         true
+Xft.hinting:           true
+Xft.hintstyle:         hintslight
+Xft.rgba:              rgb
+
+URxvt*scrollBar:       false
+URxvt*saveLines:       32767
+URxvt.colorUL:         #a9c9bc
+URxvt*cursorColor:     orange
+URxvt*cursorBlink:     true
+URxvt*title:           rxvt-256color
+URxvt*tintColor:       #636363
+URxvt*shading:         100
+URxvt*transparent:     true
+URxvt*pastableTabs:    true
+URxvt*jumpScroll:      true
+URxvt*secondaryScroll: true
+URxvt*urgentOnBell:    true
 
 !clipboard settings
 URxvt.keysym.M-c	: perl:clipboard:copy

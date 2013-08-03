@@ -27,6 +27,8 @@ set guioptions-=m " remove menu
 set guioptions-=r " remove the right scrollbar
 set guioptions-=L " remove left scrollbar when split
 
+set guifont=DejaVu\ Sans\ Mono\ 11
+
 " some regular options
 set scrolloff=5 " begin scrolling 5 lines from the bottom
 set cursorline " highlight cursor line

@@ -14,7 +14,7 @@ if [ -f ~/.bash_ssh ]; then
 fi
 
 # add Ruby to path
-PATH="${PATH}:/home/rho/.gem/ruby/1.9.1/bin"
+PATH="${PATH}:/home/rho/.gem/ruby/2.0.0/bin"
 
 # set UTF-8
 export TERM=xterm
@@ -28,11 +28,26 @@ export VISUAL="/usr/bin/vim -p -X"
 alias "backlight"="/bin/bash /usr/bin/asus-screen-brightness"
 
 # alias for sudo to carry environment variables over
-alias sudo="sudo -E"
+alias sudo="sudo -E "
 
 # alias terminal vim to gvim
 alias vim="gvim"
 alias vi="gvim"
 
 # alias for todo.sh to t
+export TODOTXT_DEFAULT_ACTION=ls
 alias t="todo.sh"
+alias punch="python2 /home/rho/src/punch-time-tracking-plus/Punch.py"
+
+# local mysql alias
+alias mysql='mysql -uroot -proot'
+
+# restart awesome
+alias awesomerestart='echo "awesome.restart()" | awesome-client'
+
+# devkitpro
+export DEVKITPRO=/opt/devkitpro
+export DEVKITPPC=$DEVKITPRO/devkitPPC
+
+# NVM
+source ~/.nvm/nvm.sh
