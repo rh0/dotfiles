@@ -13,6 +13,11 @@ if [ -f ~/.bash_ssh ]; then
   . ~/.bash_ssh
 fi
 
+# ssh aliases
+if [ -f ~/.bash_profile ]; then
+  . ~/.bash_profile
+fi
+
 # add Ruby to path
 PATH="${PATH}:/home/rho/.gem/ruby/2.0.0/bin"
 
