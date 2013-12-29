@@ -29,6 +29,9 @@ export LC_MESSAGES="C"
 # make vim a default
 export VISUAL="/usr/bin/vim -p -X"
 
+# prompt customaizations
+PS1="\n\[\033[1;37m\]\342\224\214($(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;34m\]\u@\h'; fi)\[\033[1;37m\])\$([[ \$? != 0 ]] && echo \"\342\224\200(\[\033[0;31m\]\342\234\227\[\033[1;37m\])\")\342\224\200(\[\033[1;34m\]\@ \d\[\033[1;37m\])\[\033[1;37m\]\n\342\224\234\342\224\200(\[\033[1;32m\]\w\[\033[1;37m\])\n\342\224\224\342\224\200$>> \[\033[0m\]"
+
 # alias for screen backlight fix
 alias "backlight"="/bin/bash /usr/bin/asus-screen-brightness"
 
@@ -56,3 +59,6 @@ export DEVKITPPC=$DEVKITPRO/devkitPPC
 
 # NVM
 source ~/.nvm/nvm.sh
+
+# Bundler
+export GEM_HOME=~/.gem/ruby/2.0.0

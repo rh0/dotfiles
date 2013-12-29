@@ -133,3 +133,6 @@
 [submodule "vim/bundle/gitgutter"]
 	path = vim/bundle/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "vim/bundle/vim-markdown-jekyll"]
+	path = vim/bundle/vim-markdown-jekyll
+	url = https://github.com/PProvost/vim-markdown-jekyll.git

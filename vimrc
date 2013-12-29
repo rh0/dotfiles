@@ -136,6 +136,7 @@ let NERDTreeAutoDeleteBuffer = 1
 
 " Taglist Options
 let Tlist_Inc_Winwidth = 0
+let Tlist_WinWidth = 40
 let Tlist_Show_One_file = 1
 let Tlist_Sort_Type = "order"
 let Tlist_Use_Right_Window = 1
