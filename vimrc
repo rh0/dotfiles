@@ -131,7 +131,7 @@ let NERDTreeHijackNetrw = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeChiDirMode = 2
-let NERDTreeDirArrows=1
+let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
 
 " Taglist Options
@@ -140,4 +140,15 @@ let Tlist_WinWidth = 40
 let Tlist_Show_One_file = 1
 let Tlist_Sort_Type = "order"
 let Tlist_Use_Right_Window = 1
+let TList_Auto_Highight_Tag = 0
+let Tlist_Highlight_Tag_On_BufEnter = 0
+let Tlist_Show_One_File = 1
 map <f4> : TlistToggle <CR>
+
+" Gist options
+let g:gist_open_browser_after_post = 1
+let g:gist_detect_filetype = 1
+let g:gist_get_multiplefile = 1
+
+" Airline
+let g:airline_powerline_fonts = 1
