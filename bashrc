@@ -8,6 +8,9 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+# vi mode
+set -o vi
+
 # ssh aliases
 if [ -f ~/.bash_ssh ]; then
   . ~/.bash_ssh
@@ -19,7 +22,7 @@ if [ -f ~/.bash_profile ]; then
 fi
 
 # add Ruby to path
-PATH="${PATH}:/home/rho/.gem/ruby/2.0.0/bin"
+PATH="${PATH}:/home/rho/.gem/ruby/2.1.0/bin"
 
 # set UTF-8
 export TERM=xterm
