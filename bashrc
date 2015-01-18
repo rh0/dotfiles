@@ -56,6 +56,9 @@ alias mysql='mysql -uroot -proot'
 # restart awesome
 alias awesomerestart='echo "awesome.restart()" | awesome-client'
 
+# enable onlap monitor alias
+alias onlap='xrandr --output HDMI1 --mode 1366x768 --right-of eDP1'
+
 # devkitpro
 export DEVKITPRO=/opt/devkitpro
 export DEVKITPPC=$DEVKITPRO/devkitPPC
