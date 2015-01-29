@@ -68,3 +68,6 @@ source ~/.nvm/nvm.sh
 
 # Bundler
 export GEM_HOME=~/.gem/ruby/2.0.0
+
+# Alias for bd see https://github.com/vigneshwaranr/bd
+alias bd=". bd -si"
