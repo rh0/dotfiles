@@ -18,6 +18,8 @@ set fileencoding=utf-8
 " Zenburn Colors (alien fruit salad)
 colors zenburn
 
+set colorcolumn=81
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
