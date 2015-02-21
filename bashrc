@@ -24,6 +24,9 @@ fi
 # add Ruby to path
 PATH="${PATH}:/home/rho/.gem/ruby/2.1.0/bin"
 
+# adding paths for Go
+export GOPATH=$HOME/src/go-school/goeg
+
 # set UTF-8
 export TERM=xterm
 export LANG=en_US.UTF-8
