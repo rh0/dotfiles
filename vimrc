@@ -11,6 +11,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" always slip with the shift key
+nnoremap ; :
+
 " make sure we get utf-8
 set encoding=utf-8
 set fileencoding=utf-8
@@ -18,6 +21,7 @@ set fileencoding=utf-8
 " Zenburn Colors (alien fruit salad)
 colors zenburn
 
+" Indicator at col 81
 set colorcolumn=81
 
 " allow backspacing over everything in insert mode
