@@ -158,3 +158,6 @@ let g:gist_get_multiplefile = 1
 
 " Airline
 let g:airline_powerline_fonts = 1
+
+" Trailing Whitespace
+let g:DeleteTrailingWhitespace_Action = 'ask'
