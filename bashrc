@@ -24,8 +24,11 @@ fi
 # add Ruby to path
 PATH="${PATH}:/home/rho/.gem/ruby/2.1.0/bin"
 
+# add Android SDK to path
+PATH="${PATH}:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:/opt/android-sdk/build-tools"
+
 # adding paths for Go
-export GOPATH=$HOME/src/go-school/goeg
+export GOPATH=$HOME/src/go-school/goeg:$HOME/www/emed/trinity/import_preprocess
 
 # set UTF-8
 export TERM=xterm
@@ -74,3 +77,5 @@ export GEM_HOME=~/.gem/ruby/2.0.0
 
 # Alias for bd see https://github.com/vigneshwaranr/bd
 alias bd=". bd -si"
+
+alias alsi="alsi -a"
