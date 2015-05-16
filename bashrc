@@ -30,6 +30,9 @@ PATH="${PATH}:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:/opt/androi
 # adding paths for Go
 export GOPATH=$HOME/src/go-school/goeg:$HOME/www/emed/trinity/import_preprocess
 
+# adding composer dir to path
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
 # set UTF-8
 export TERM=xterm
 export LANG=en_US.UTF-8
