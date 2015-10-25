@@ -29,7 +29,8 @@ URxvt.keysym.M-V	: perl:clipboard:paste
 URxvt.keysym.M-C-v	: perl:clipboard:paste_escaped
 
 !Fonts
-URxvt.font	  : xft:DejaVu Sans Mono:size=11
+URxvt.font	  : xft:DejaVu Sans Mono:size=11:antialias=true
+URxvt.boldFont: xft:DejaVu Sans Mono:bold:size=11:antialias=true
 
 !Zenburn Color Scheme
 !BLK Cursor
