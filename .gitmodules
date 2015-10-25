@@ -148,3 +148,6 @@
 [submodule "vim/bundle/scratch.vim"]
 	path = vim/bundle/scratch.vim
 	url = git@github.com:mtth/scratch.vim.git
+[submodule "vim/bundle/vim-ledger"]
+	path = vim/bundle/vim-ledger
+	url = git@github.com:ledger/vim-ledger.git
