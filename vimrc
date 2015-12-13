@@ -164,3 +164,7 @@ let g:DeleteTrailingWhitespace_Action = 'ask'
 
 " Spelling
 :map <F5> :setlocal spell! spelllang=en_us<CR>
+
+" Ledger Config
+let g:ledger_maxwidth = 80
+let g:ledger_fillstring = '   -'

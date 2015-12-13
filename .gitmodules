@@ -151,3 +151,6 @@
 [submodule "vim/bundle/vim-ledger"]
 	path = vim/bundle/vim-ledger
 	url = git@github.com:ledger/vim-ledger.git
+[submodule "vim/bundle/vim-autoformat"]
+	path = vim/bundle/vim-autoformat
+	url = git@github.com:Chiel92/vim-autoformat.git
