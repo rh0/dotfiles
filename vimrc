@@ -11,8 +11,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" always slip with the shift key
-nnoremap ; :
+" Block move
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 
 " make sure we get utf-8
 set encoding=utf-8
@@ -80,6 +81,8 @@ set undofile
 
 " enable syntax for the win
 syntax on " enable syntax highlighting
+filetype on
+au BufNewFile,BufRead *.theme set filetype=php
 
 " load filetype indents
 if has("autocmd")

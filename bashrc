@@ -22,7 +22,7 @@ if [ -f ~/.bash_profile ]; then
 fi
 
 # add Ruby to path
-PATH="${PATH}:/home/rho/.gem/ruby/2.1.0/bin"
+PATH="${PATH}:/home/rho/.gem/ruby/2.3.0/bin"
 
 # add Android SDK to path
 PATH="${PATH}:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:/opt/android-sdk/build-tools"
@@ -82,3 +82,6 @@ export GEM_HOME=~/.gem/ruby/2.0.0
 alias bd=". bd -si"
 
 alias alsi="alsi -a"
+
+alias dirs="dirs -v"
+
