@@ -81,7 +81,7 @@ set undofile
 
 " enable syntax for the win
 syntax on " enable syntax highlighting
-filetype on
+filetype plugin on
 au BufNewFile,BufRead *.theme set filetype=php
 
 " load filetype indents
