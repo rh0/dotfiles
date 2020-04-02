@@ -160,6 +160,7 @@ let g:gist_detect_filetype = 1
 let g:gist_get_multiplefile = 1
 
 " Airline
+let g:powerline_pycmd = "py3"
 let g:airline_powerline_fonts = 1
 
 " Trailing Whitespace

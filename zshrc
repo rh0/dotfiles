@@ -30,7 +30,7 @@ ZSH_THEME="bureau"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -53,7 +53,7 @@ plugins=(git, archlinux, git-extras, vi-mode)
 
 # User configuration
 
-export PATH="/home/rho/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:/opt/devkitpro/devkitPPC/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/rho/.gem/ruby/2.3.0/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:/opt/android-sdk/build-tools"
+export PATH="/home/rho/.gem/ruby/2.7.0/bin:/home/rho/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:/opt/devkitpro/devkitPPC/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:/opt/android-sdk/build-tools"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -84,8 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Try and load bashrc
-# add Ruby to path
-PATH="${PATH}:/home/rho/.gem/ruby/2.3.0/bin"
 
 # add Android SDK to path
 PATH="${PATH}:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:/opt/android-sdk/build-tools"
@@ -94,7 +92,7 @@ PATH="${PATH}:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:/opt/androi
 export GOPATH=$HOME/src/go-school/goeg:$HOME/www/emed/trinity/import_preprocess
 
 # adding composer dir to path
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$HOME/.local/bin:$PATH"
 
 # set UTF-8
 export TERM=xterm
@@ -117,7 +115,7 @@ alias vi="gvim"
 # alias for todo.sh to t
 export TODOTXT_DEFAULT_ACTION=ls
 alias td="todo.sh"
-alias punch="python2 /home/rho/src/punch-time-tracking-plus/Punch.py"
+alias punch="python2 /home/rho/.todo/punch/Punch.py"
 
 # local mysql alias
 alias mysql='mysql -uroot -proot'
@@ -126,24 +124,21 @@ alias mysql='mysql -uroot -proot'
 alias awesomerestart='echo "awesome.restart()" | awesome-client'
 
 # enable onlap monitor alias
-alias onlap='xrandr --output HDMI1 --mode 1366x768 --below eDP1'
-alias hdmoff='xrandr --output HDMI1 --off'
+alias onlap='xrandr --output HDMI-0 --mode 1366x768 --right-of DP-0'
+alias hdmoff='xrandr --output HDMI-0 --off'
+
+# nodejs as node
+alias nodejs=node
 
 # devkitpro
 export DEVKITPRO=/opt/devkitpro
 export DEVKITPPC=$DEVKITPRO/devkitPPC
 
-# NVM
-source ~/.nvm/nvm.sh
-
 # Bundler
-export GEM_HOME=~/.gem/ruby/2.3.0
+#export GEM_HOME=~/.gem/ruby/2.3.0
 
 # Alias for bd see https://github.com/vigneshwaranr/bd
 alias bd=". bd -si"
-
-# ssh aliases
-source ~/.bash_ssh
 
 alias alsi="alsi -a"
 
@@ -158,3 +153,5 @@ eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa)
 eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa_vol)
 
 source "$HOME/.console/console.rc" 2>/dev/null
+
+source /usr/share/nvm/init-nvm.sh
