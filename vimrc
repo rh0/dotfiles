@@ -152,9 +152,6 @@ map <f4> : TlistToggle <CR>
 let g:powerline_pycmd = "py3"
 let g:airline_powerline_fonts = 1
 
-" Trailing Whitespace
-let g:DeleteTrailingWhitespace_Action = 'ask'
-
 " Spelling
 :map <F5> :setlocal spell! spelllang=en_us<CR>
 
