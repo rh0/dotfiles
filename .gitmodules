@@ -34,9 +34,6 @@
 [submodule "vim/bundle/endwise"]
 	path = vim/bundle/endwise
 	url = git://github.com/tpope/vim-endwise.git
-[submodule "vim/bundle/gist"]
-	path = vim/bundle/gist
-	url = git://github.com/mattn/gist-vim.git
 [submodule "vim/bundle/vim-git"]
 	path = vim/bundle/vim-git
 	url = https://github.com/tpope/vim-git
@@ -160,3 +157,10 @@
 [submodule "vim/bundle/vim-vue"]
 	path = vim/bundle/vim-vue
 	url = https://github.com/posva/vim-vue.git
+[submodule "vim/bundle/vimwiki"]
+	path = vim/bundle/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
+[submodule "AutoClose"]
+	path = AutoClose
+	url = git://github.com/vim-scripts/AutoClose.git
+	branch = master

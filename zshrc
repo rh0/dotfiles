@@ -85,6 +85,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Try and load bashrc
 
+# set internationalization on right alt
+setxkbmap -layout us -variant altgr-intl -option nodeadkeys
+
 # add Android SDK to path
 PATH="${PATH}:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:/opt/android-sdk/build-tools"
 
@@ -93,6 +96,9 @@ export GOPATH=$HOME/src/go-school/goeg:$HOME/www/emed/trinity/import_preprocess
 
 # adding composer dir to path
 export PATH="$HOME/.composer/vendor/bin:$HOME/.local/bin:$PATH"
+#
+# adding composer dir to path
+export PATH="$HOME/.nvm/versions/node/v8.9.1/bin:$PATH"
 
 # set UTF-8
 export TERM=xterm
@@ -109,8 +115,8 @@ alias "backlight"="/bin/bash /usr/bin/asus-screen-brightness"
 alias sudo="sudo -E "
 
 # alias terminal vim to gvim
-alias vim="gvim"
-alias vi="gvim"
+#alias vim="gvim"
+#alias vi="gvim"
 
 # alias for todo.sh to t
 export TODOTXT_DEFAULT_ACTION=ls
