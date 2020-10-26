@@ -57,6 +57,7 @@ set showmode " shows what mode the user is in
 set showcmd " displays partial commands as you type
 set history=256 " increase vim history size
 set title " set the window title
+set updatetime=100 " reducing update time for gitgutter
 
 " set lower priority suffixes
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
