@@ -152,6 +152,8 @@ map <f4> : TlistToggle <CR>
 " Airline
 let g:powerline_pycmd = "py3"
 let g:airline_powerline_fonts = 1
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 
 " Spelling
 :map <F5> :setlocal spell! spelllang=en_us<CR>
