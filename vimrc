@@ -40,6 +40,7 @@ set guifont=DejaVu\ Sans\ Mono\ 12
 
 " some regular options
 set cursorline " highlight cursor line
+set relativenumber " relative line numbers
 set scrolloff=5 " begin scrolling 5 lines from the bottom
 set number " show line numbers
 set laststatus=2 " show statusline
@@ -172,3 +173,7 @@ let g:vimwiki_list = [
         \{'path': '~/archive/wiki/test.wiki'},
         \{'path': '~/archive/wiki/electro.wiki', 'automatic_nested_syntaxes': 1},
 \]
+
+" Trailing Whitespace
+highlight ExtraWhitespace ctermbg=black guibg=black
+match ExtraWhitespace /\s\+$/
