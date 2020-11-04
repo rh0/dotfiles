@@ -87,6 +87,7 @@ au BufNewFile,BufRead *.theme set filetype=php
 au BufNewFile,BufRead *.module set filetype=php
 au BufNewFile,BufRead *.inc set filetype=php
 au BufNewFile,BufRead *.install set filetype=php
+au BufNewFile,BufRead *.twig set filetype=html
 
 " load filetype indents
 if has("autocmd")
@@ -159,7 +160,6 @@ let g:airline_right_sep=''
 
 " Spelling
 :map <F5> :setlocal spell! spelllang=en_us<CR>
-
 " Ledger Config
 let g:ledger_maxwidth = 80
 let g:ledger_fillstring = '   -'
