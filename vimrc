@@ -174,6 +174,9 @@ let g:vimwiki_list = [
         \{'path': '~/archive/wiki/electro.wiki', 'automatic_nested_syntaxes': 1},
 \]
 
+" CoC settings
+"let g:coc_global_extensions = ['co-json', 'coc-css', 'coc-html', 'coc-json', 'coc-yaml', 'coc-phpls', 'coc-python', 'coc-spell-checker', 'coc-sql', 'coc-tsserver', 'coc-vetur']
+
 " Trailing Whitespace
 highlight ExtraWhitespace ctermbg=black guibg=black
 match ExtraWhitespace /\s\+$/
